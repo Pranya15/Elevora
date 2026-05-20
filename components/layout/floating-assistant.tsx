@@ -142,7 +142,7 @@ export function FloatingAssistant() {
         {
           id: crypto.randomUUID(),
           role: "assistant",
-          content: payload.answer
+          content: payload.answer || ""
         }
       ]);
     } catch (error) {
